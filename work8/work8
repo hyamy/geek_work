@@ -182,4 +182,39 @@
 
 写入一定量的 kv 数据, 根据数据大小 1w-50w 自己评估, 结合写入前后的 info memory 信息 , 分析上述不同 value 大小下，平均每个 key 的占用内存空间。
 
+写入之前
+127.0.0.1:6379> info memory
+# Memory
+used_memory:283479088
+used_memory_human:270.35M
+used_memory_rss:288018432
+used_memory_rss_human:274.68M
+used_memory_peak:283479936
+used_memory_peak_human:270.35M
+total_system_memory:1927004160
+total_system_memory_human:1.79G
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+mem_fragmentation_ratio:1.02
+mem_allocator:jemalloc-3.6.0
 
+
+Memory
+used_memory:407105888
+used_memory_human:388.25M
+used_memory_rss:412950528
+used_memory_rss_human:393.82M
+used_memory_peak:407105888
+used_memory_peak_human:388.25M
+total_system_memory:1927004160
+total_system_memory_human:1.79G
+used_memory_lua:37888
+used_memory_lua_human:37.00K
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+mem_fragmentation_ratio:1.01
+mem_allocator:jemalloc-3.6.0
